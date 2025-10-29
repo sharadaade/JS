@@ -1,0 +1,108 @@
+
+# break and continue in if/if-else
+####################################################################################
+NOTE : break and continue only occur in for, while or do-while loop;
+if try to use break and continue in if or if-else it shows syntax error
+
+####################################################################################
+There are 8 basic data types in JavaScript.
+####################################################################################
+    Seven primitive data types:
+        number - for numbers of any kind: integer or floating-point, integers are limited by ±(253-1).
+        bigint -  for integer numbers of arbitrary length.
+        string - for strings. A string may have zero or more characters, there’s no separate single-character type.
+        boolean - for true/false.
+        null - for unknown values – a standalone type that has a single value null.
+        undefined - for unassigned values – a standalone type that has a single value undefined.
+        symbol -  for unique identifiers.
+
+      And one non-primitive data type:
+        object - for more complex data structures.
+
+    The typeof operator allows us to see which type is stored in a variable.
+    Usually used as typeof x, but typeof(x) is also possible.
+    Returns a string with the name of the type, like "string".
+    For null returns "object" – this is an error in the language, it’s not actually an object.
+
+###################################################################################
+🧠 Nullish Coalescing Operator (??) — Beginner Notes
+###################################################################################
+------------------------------------------------------------
+What is it?
+------------------------------------------------------------
+The Nullish Coalescing Operator (??) is used to provide a 
+default value when a variable is null or undefined.
+
+Syntax:
+    let result = value ?? defaultValue;
+
+Meaning:
+    If 'value' is null or undefined, use 'defaultValue'.
+    Otherwise, use 'value'.
+
+------------------------------------------------------------
+Examples:
+------------------------------------------------------------
+
+Example 1:
+-----------
+let username = null;
+let displayName = username ?? "Guest";
+console.log(displayName); 
+// Output: "Guest"
+
+Example 2:
+-----------
+let username = "Sharad";
+let displayName = username ?? "Guest";
+console.log(displayName); 
+// Output: "Sharad"
+
+------------------------------------------------------------
+Difference Between ?? and ||
+------------------------------------------------------------
+|| (Logical OR) checks for ALL falsy values 
+(0, "", false, null, undefined)
+?? checks ONLY for null or undefined
+
+Example:
+-----------
+let count = 0;
+
+console.log(count || 10); // Output: 10 (because 0 is falsy)
+console.log(count ?? 10); // Output: 0 (because 0 is not null or undefined)
+
+------------------------------------------------------------
+Real-world Example:
+------------------------------------------------------------
+let user = {
+  name: "Sharad",
+  age: null
+};
+
+console.log(user.name ?? "Anonymous"); // Sharad
+console.log(user.age ?? 18);           // 18
+console.log(user.country ?? "India");  // India
+
+------------------------------------------------------------
+Exercise:
+------------------------------------------------------------
+Predict the output:
+console.log("" ?? "empty");
+console.log("" || "empty");
+console.log(false ?? "no value");
+console.log(false || "no value");
+console.log(undefined ?? "missing");
+
+------------------------------------------------------------
+Summary:
+------------------------------------------------------------
+Operator: ??
+Meaning: Checks only for null or undefined
+Purpose: Provide a fallback value when something is missing
+Use Instead of: || when you don’t want to treat 0, false, or "" as missing
+------------------------------------------------------------
+
+
+
+

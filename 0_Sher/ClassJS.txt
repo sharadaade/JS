@@ -1,0 +1,582 @@
+Javascript:
+====================================================================================
+Javascript is a high level,  interpreted programming language which is used to make web pages more interactive and dynamic. it adds functionality or behaviour to web pages.
+Javascript is a synchronous and single threaded language.synchronous means it runs line by line. single threaded means one task at a time
+
+Javascript can be client side(browser based) or server side(nodejs). we will discuss here browser based.
+
+Every Browser contains an engine called "JS Engine" which runs javascript. For google chrome, js engine is v8
+
+History:
+ In 1995, Breden Eich of Netscape developed a programming language combining the features of java and python  called "livescript". it was initially "livescript" but to aquire the popularity of "JAVA", renamed as "javascript".
+ Later multiple browser brought different scripts such as JScript,bscript,coffeescript etc.., The standards were passed to all browser to maintain similar script , "standard javascript". The rules and standard are maintained by ECMASCRIPT. The recent version of JS is "ES15"
+
+There are lot of other technologies or libraries that are popular to make
+JS more easy. They are JQuery, React,Angular,Vue, backbone,Next,Nest,Express,node etc..,
+
+How to include JS into HTML?
+   JS can be included to HTML using two ways
+   i. internal Javascript : it is used to add JS to HTML within "script" element
+
+   ii. External Javascript : it is used to add external JS into HTML using "script" element with "src" attribute
+   <script src="path"></script>
+
+
+we can debug JS code using console. 'console' is part of the browser developer tools which are used to debug and understand the web page well.
+'console' can run JS . so, initially will print in console until JS basic were done.
+
+comments in Javascript :
+   In Javascript, There are two types of comments such as
+   single line comments : // comments followed by by double slash
+   multiline comments : comments with /* and */
+eg : /* this
+  is a
+  multi line comment */
+
+variables in Javascript: variables or Identifiers are used to assign/store different values. They are defined using "var" ,"let" and "const"
+var : var is a function scoped variable which is used throught the function. it can be redeclared, reassigned and also can be used before declaration
+it is old way of declaring variables in javascript
+console.log(a);
+//using var
+var a = 25;
+console.log(a);
+var a = 16; //redeclared
+a = 50; //reasssign
+console.log(a)
+
+let and const : let and const are block scoped variables. They can be used only in the block. They cannot be redeclared and are not possible to access before declaration. let can reassign but const cannot.
+
+//console.log(c) //error
+//using let and const
+let b = 10;
+console.log(b);
+b = 20;
+console.log(b)
+const c = 20;
+// c = 30; constant variable cannot be changed
+// const c = 50; //error
+
+
+Basic Functions in JS :
+There are three basic functions default provided by Browser are
+   i. alert() : it is used to show an alert message
+      alert("some message");
+   
+   ii. confirm() : it is used to get confirmation from user and returns true or false
+      confirm("Are you sure?")
+
+   iii. Prompt() : it is used to get user Input . it always receives them as string
+      prompt("enter data")
+
+
+
+Questions:
+1. what is the difference between var,let and const
+2. Explain the use and advantages of Javascript
+3. Write a javascript code to print multiplication of two numbers in internal and external JS (both)
+
+
+Datatypes in JavaScript:
+    JavaScript is  a dynamic typing programming languages. it means in JS, there is no fixed datatype for a variable . Based on the value it stores it changes the datatype.
+    The datatypes are divided into two types:
+       i. Primitive Datatypes
+       ii. Non -Primitive Datatypes / Reference Datatypes
+
+    i. Primitive Datatypes :These datatypes stores the value and uses only value for comparison.
+      Most widely used Primitive Datatypes are
+       number, string,boolean,undefined, null
+
+    ii. Non -Primitive Datatypes: These datatypes stores the reference with elements , also called reference datatypes
+      Most widely used Non - Primitive Datatypes are
+        functions, arrays, objects
+
+i. Primitive Datatypes :
+     number: number is the datatypes assigned to any numerical values
+     let a=2.56,b=-Infinity
+    In case of expected number but got another value, it is considered as NaN(Not a Number)
+
+    Numbers have some default functions such as
+      i.toFixed(n) : it is used to fix/rounds the number upto n decimal digits
+      ii. toPrecision(n): it is used to rounds the number upto n total digits
+      iii. toString(base): it is used to convert the given number into string of certain base
+
+Math Methods:
+//numbers also math methods
+console.log(Math.sqrt(16)) //4  -- square root of a number
+console.log(Math.cbrt(27)) //3  -- cube root of a number
+console.log(Math.pow(2, 3), 2**3) //8  -- power of number(a power b)
+console.log(Math.abs(-10))  //10  -- always returns positive value
+console.log(Math.ceil(1.4))//2  -- returns nearest largest integer
+console.log(Math.floor(-1.5)) //-2 -- returns nearest smallest integer
+console.log(Math.round(2.53)) //3 -- returns nearest integer
+console.log(Math.random()) // returns random value between 0 and 1
+console.log(Math.max(5,3,1,4,9)) //9 -- returns maximum value
+console.log(Math.min(5,3,1,4,9)) //1 -- returns minimum value
+
+write a JS code to PRINT random number between 1 to 6 on each time
+console.log(Math.ceil(Math.random() * 6))
+write a JS codr to PRINT random number between 7 to 14 on each time
+
+
+Datatypes in JavaScript:
+    JavaScript is  a dynamic typing programming languages. it means in JS, there is no fixed datatype for a variable . Based on the value it stores it changes the datatype.
+    The datatypes are divided into two types:
+       i. Primitive Datatypes
+       ii. Non -Primitive Datatypes / Reference Datatypes
+
+    i. Primitive Datatypes :These datatypes stores the value and uses only value for comparison.
+      Most widely used Primitive Datatypes are
+       number, string,boolean,undefined, null
+
+    ii. Non -Primitive Datatypes: These datatypes stores the reference with elements , also called reference datatypes
+      Most widely used Non - Primitive Datatypes are
+        functions, arrays, objects
+
+i. Primitive Datatypes :
+     number: number is the datatypes assigned to any numerical values
+     let a=2.56,b=-Infinity
+    In case of expected number but got another value, it is considered as NaN(Not a Number)
+
+    Numbers have some default functions such as
+      i.toFixed(n) : it is used to fix/rounds the number upto n decimal digits
+      ii. toPrecision(n): it is used to rounds the number upto n total digits
+      iii. toString(base): it is used to convert the given number into string of certain base
+
+Math Methods:
+//numbers also math methods
+console.log(Math.sqrt(16)) //4  -- square root of a number
+console.log(Math.cbrt(27)) //3  -- cube root of a number
+console.log(Math.pow(2, 3), 2**3) //8  -- power of number(a power b)
+console.log(Math.abs(-10))  //10  -- always returns positive value
+console.log(Math.ceil(1.4))//2  -- returns nearest largest integer
+console.log(Math.floor(-1.5)) //-2 -- returns nearest smallest integer
+console.log(Math.round(2.53)) //3 -- returns nearest integer
+console.log(Math.random()) // returns random value between 0 and 1
+console.log(Math.max(5,3,1,4,9)) //9 -- returns maximum value
+console.log(Math.min(5,3,1,4,9)) //1 -- returns minimum value
+
+write a JS code to PRINT random number between 1 to 6 on each time
+console.log(Math.ceil(Math.random() * 6))
+write a JS codr to PRINT random number between 7 to 14 on each time
+
+
+Questions:
+1. Explain Datatypes in JavaScript.Explain Dynamic Datatyping
+2. Explain methods toFixed(),toPrecision() and toString()
+3. Write a JS code to print 4 digit OTP(random)
+Post by Durga Prasad
+Durga Prasad
+Created Oct 23Oct 23
+Javascript: Javascript is a high level,  interpreted programming language which is used to make web pages more interactive and dynamic. it adds functionality or behavior to web pages.
+Javascript is a synchronous and single threaded language.synchronous means it runs line by line. single threaded means one task at a time
+
+Javascript can be client side(browser based) or server side(nodejs). we will discuss here browser based.
+
+Every Browser contains an engine called "JS Engine" which runs javascript. For google chrome, js engine is v8
+
+History:
+ In 1995, Breden Eich of Netscape developed a programming language combining the features of java and python  called "livescript". it was initially "livescript" but to acquire the popularity of "JAVA", renamed as "javascript".
+ Later multiple browser brought different scripts such as JScript, bscript, coffeescript etc.., The standards were passed to all browser to maintain similar script , "standard javascript". The rules and standard are maintained by ECMASCRIPT. The recent version of JS is "ES15"
+
+There are lot of other technologies or libraries that are popular to make
+JS more easy. They are JQuery, React,Angular,Vue, backbone,Next,Nest,Express,node etc..,
+
+How to include JS into HTML?
+   JS can be included to HTML using two ways
+   i. internal Javascript : it is used to add JS to HTML within "script" element
+
+   ii. External Javascript : it is used to add external JS into HTML using "script" element with "src" attribute
+   <script src="path"></script>
+
+
+we can debug JS code using console. 'console' is part of the browser developer tools which are used to debug and understand the web page well.
+'console' can run JS . so, initially will print in console until JS basic were done.
+
+comments in Javascript :
+   In Javascript, There are two types of comments such as
+   single line comments : // comments followed by by double slash
+   multiline comments : comments with /* and */
+eg : /* this
+  is a
+  multi line comment */
+
+variables in Javascript: variables or Identifiers are used to assign/store different values. They are defined using "var" ,"let" and "const"
+var : var is a function scoped variable which is used thought the function. it can be redeclared, reassigned and also can be used before declaration
+it is old way of declaring variables in javascript
+console.log(a);
+//using var
+var a = 25;
+console.log(a);
+var a = 16; //redeclared
+a = 50; //reassign
+console.log(a)
+
+let and const : let and const are block scoped variables. They can be used only in the block. They cannot be redeclared and are not possible to access before declaration. let can reassign but const cannot.
+
+//console.log(c) //error
+//using let and const
+let b = 10;
+console.log(b);
+b = 20;
+console.log(b)
+const c = 20;
+// c = 30; constant variable cannot be changed
+// const c = 50; //error
+
+
+Basic Functions in JS :
+There are three basic functions default provided by Browser are
+   i. alert() : it is used to show an alert message
+      alert("some message");
+   
+   ii. confirm() : it is used to get confirmation from user and returns true or false
+      confirm("Are you sure?")
+
+   iii. Prompt() : it is used to get user Input . it always receives them as string
+      prompt("enter data")
+
+
+
+Questions:
+1. what is the difference between var,let and const
+2. Explain the use and advantages of Javascript
+3. Write a javascript code to print multiplication of two numbers in internal and external JS (both)
+
+
+
+Datatypes in JavaScript:
+    JavaScript is  a dynamic typing programming languages. it means in JS, there is no fixed datatype for a variable . Based on the value it stores it changes the datatype.
+    The datatypes are divided into two types:
+       i. Primitive Datatypes
+       ii. Non -Primitive Datatypes / Reference Datatypes
+
+    i. Primitive Datatypes :These datatypes stores the value and uses only value for comparison.
+      Most widely used Primitive Datatypes are
+       number, string,boolean,undefined, null
+
+    ii. Non -Primitive Datatypes: These datatypes stores the reference with elements , also called reference datatypes
+      Most widely used Non - Primitive Datatypes are
+        functions, arrays, objects
+
+i. Primitive Datatypes :
+     number: number is the datatypes assigned to any numerical values
+     let a=2.56,b=-Infinity
+    In case of expected number but got another value, it is considered as NaN(Not a Number)
+
+    Numbers have some default functions such as
+      i.toFixed(n) : it is used to fix/rounds the number up to n decimal digits
+      ii. toPrecision(n): it is used to rounds the number up to n total digits
+      iii. toString(base): it is used to convert the given number into string of certain base
+
+    Math Methods:
+    //numbers also math methods
+console.log(Math.sqrt(16)) //4  -- square root of a number
+console.log(Math.cbrt(27)) //3  -- cube root of a number
+console.log(Math.pow(2, 3), 2**3) //8  -- power of number(a power b)
+console.log(Math.abs(-10))  //10  -- always returns positive value
+console.log(Math.ceil(1.4))//2  -- returns nearest largest integer
+console.log(Math.floor(-1.5)) //-2 -- returns nearest smallest integer
+console.log(Math.round(2.53)) //3 -- returns nearest integer
+console.log(Math.random()) // returns random value between 0 and 1
+console.log(Math.max(5,3,1,4,9)) //9 -- returns maximum value
+console.log(Math.min(5,3,1,4,9)) //1 -- returns minimum value
+
+write a JS code to PRINT random number between 1 to 6 on each time
+console.log(Math.ceil(Math.random() * 6))
+write a JS code to PRINT random number between 7 to 14 on each time
+
+console.log(Math.round(Math.random() * 7)+7)
+console.log(Math.round((Math.random() + 1)*7))
+
+
+Questions:
+1. Explain Datatypes in JavaScript.Explain Dynamic Datatyping
+2. Explain methods toFixed(),toPrecision() and toString()
+3. Write a JS code to print 4 digit OTP(random)
+console.log(Math.floor(Math.random()*10000))
+
+Strings : strings are used to store alphanumerical values(alphabets+numbers). strings can be represented in three ways
+  i. single or double quotes:
+     let a= 'raj';
+     console.log(typeof a) //string
+     let b = "raj"
+     console.log(typeof b) //string
+     There is no difference between single or double quotes in JavaScript. based on the usage/nested strings , we use each one
+
+  ii. backticks : usage of backticks for strings in js results dynamic strings which can print dynamic values without breaking the strings.
+   These type of strings are also called "template literals"
+   let name="john"
+   console.log(`welcome ${name}`)
+   ${} is used to keep dynamic values/variables
+
+There are so many default functions for strings such as :
+   i. str.length --- returns the total number of characters in given string
+   ii. str.toUppercase() -- returns the uppercase converted string
+   iii. str.toLowerCase() -- returns the lowercase converted string
+   iv. str.startsWith(str1) -- returns true/false based on whether str is starting with str1 or Not
+   v. str.endsWith(str1) -- returns true/false based on whether str is ending with str1 or Not
+   vi. str.indexOf('character') -- returns index of first occurrences of given character
+   vii. str.lastIndexOf('character')--returns index of last occurrences of given character
+   viii. str.charAt(index) -- returns the character at specified index
+   ix. str.replace(oldstr,newstr) -- replaces first occurrences of old string with new string
+   x. str.replaceAll(oldstr,newStr) -- replaces all occurrences of old string to new string
+   xi. str.concat(str1) -- returns the concatenation of two strings (str+str1)
+   xii. str.trim()-- used to remove spaces at starting and ending of given string
+   xiii. split('delimiter') -- returns an array of values after splitting the string based on delimiter
+console.log(s.split('a')) // ["j","v","script"]
+
+// write a js code to print number of spaces in given string
+// "The JS is so easy"
+"The JS is so easy".split(" ").length - 1
+
+3. boolean: it is used to store data in true or false. true represents 1 and false represents 0
+4. undefined: 'undefined' is the value assigned to the variable which are declared but not initialized.
+ By default, JS takes all the variables and functions declarations to the top of the program called "HOISTING" . so thats why default values of those variables are 'undefined'
+
+  undefined and not defined are not same.'not defined' is an error to non existent variable
+
+5. null: null is the value of variable's ending. it is intentional absence of value. whenever we want to give variable with no value, we can declare them as 'null'
+
+Questions:
+   1. what is template literal? explain with an example?
+   2. write a js code to print number of letter 'p' in given sentence
+   'Poppins popup at popeye's hand'
+   3. what is the difference between null and undefined?
+   4. what is HOISTING?
+
+
+
+
+// let s = 'raj'
+// console.log(typeof s);
+// let s1 = "raj"
+// console.log(typeof s1);
+// let quote = 'The gandhi said, "Good night"'
+// let cost = 30;
+// /* template literals */
+// console.log(`The cost of an apple is ${cost}`);
+// let a = 10, b = 20;
+// console.log(`The sum of  ${a} and ${b} is ${a + b}`)
+// console.log("The sum of "+a+" and "+b+" is "+(a+b))
+
+//string methods
+let s = "javaScript"
+console.log(s.length)
+console.log(s.toUpperCase())
+console.log(s)// string are immutable
+console.log(s.toLocaleLowerCase())
+console.log(s.concat(" is easy"))
+console.log(s.charAt(4))
+console.log(s.lastIndexOf('a'))
+console.log(s.startsWith("abc"))
+console.log(s.endsWith("kt"))
+console.log(s.replaceAll('a','k'))
+console.log(" java  ".trim())
+console.log(s.split('a')) // ["j","v","script"]
+
+// write a js code to print number of spaces in given string
+// "The JS is so easy"
+"The JS is so easy".split(" ").length - 1
+
+console.log(x)
+var x;
+console.log(x)
+//HOISTING
+x = 25;
+let y = null;
+
+
+
+operators: These are used to perform operations on variables and values.
+  - Arithmetic Operators: +, -, *, /, %,**
+  let a = 2, b = 3;
+let sum = a + b;
+console.log(sum); //5
+console.log(a - b, a * b, a / b, a % b, a ** b)
+
+  -- Relational Operators: >,<,>=,<=,== ,===, !=,!==
+  a = 2, b = '2';
+console.log(a == b) //true
+console.log(a === b) //false it also compares datatype
+console.log(a != b);// false
+console.log(a !== b); //true
+console.log(a>b,a<b,a>=b,a<=b)
+   -- Logical Operators : &&, ||, !
+   && -- true only if both statements are true
+   || -- true when any one of the statement is true
+   !  -- true when statement is false
+
+   Assignment operators
+    = , += ,-=,*=,/=,%= ,**=
+    a+=2  ==> a = a+2;
+
+    Increment and Decrement : These operators are used to increase or decrease the value by 1
+     a = 5
+     a++
+     console.log(a)  //6
+     a--
+     console.log(a)   //5
+     The increment or decrement have two variations i.e., Pre and Post
+
+     Pre -- first updates the value and then assigns the value
+     Post -- first assigns the value and then updates the value
+
+     eg: a =5;
+     let b = a++;
+     console.log(b,a) //5 6
+
+     Ternary operator: it is used to validate a condition and checks different values/statements based on condition(true/false)
+     it uses three opeands so called ternary operator. it use symbols ? and  :
+     let a = 5 ,b =10;
+     let c = (a>b) ? "Good" : "Bad" ;
+     console.log(c)
+
+     Type casting : The conversion of one data type to another datatype is called Type casting. There are two types of typecasting such as
+     i.implicit typecasting
+     ii. Explicit typecasting
+
+
+   i. implicit typecasting : it means types are converted automatically based on operations
+      eg: 5 + '4' ===> '54'  (number is converted to string)
+      5- ' 4' ===> 1  (string is converted to number)
+
+   ii. explicit typecasting: it means types are converted by force using methods like toString() or Wrappers like Number(),String(),Boolean() etc.,
+   '+' is also unary operator which is used to convert string to integer
+      eg: 5 + +'4'  ==>9
+      5 + Number('4')  ==> 9
+
+
+
+let a = 2, b = 3;
+let sum = a + b;
+console.log(sum); //5
+console.log(a - b, a * b, a / b, a % b, a ** b)
+
+a = 2, b = '2';
+console.log(a == b) //true
+console.log(a === b) //false it also compares datatype
+console.log(a != b);// false
+console.log(a !== b); //true
+console.log(a>b,a<b,a>=b,a<=b)
+
+let x = 10, y = 20;
+let z = ++x + x-- + --y + y++   //11 + 11 + 19 +19
+console.log(x, y, z);
+
+Control Flow statements in JavaScript:
+    These statements that control the flow of execution in a program based on certain conditions.
+    i. Decision Making Statements:
+        a. if statement
+        b. if...else statement
+        c. else if ladder
+        d. switch statement
+    ii. Looping Statements:
+        a. for loop
+        b. while loop
+        c. do-while loop
+
+i. Decision Making Statements: These statements allows you to execute different blocks of code based on certain conditions.
+    a. if statement: The if statement executes a block of code if a specified condition is true.
+        Syntax:
+            if (condition) {
+                // code to be executed if condition is true
+            }
+        Eg:
+            let age = 18;
+            if (age >= 18) {
+                console.log("You are eligible to vote.");
+            }
+            Output: You are eligible to vote.
+    b. if...else statement: The if...else statement executes one block of code if a condition is true, and another block of code if the condition is false.
+        Syntax:
+            if (condition) {
+                // code to be executed if condition is true
+            } else {
+                // code to be executed if condition is false
+            }
+        Eg:
+            let age = 16;
+            if (age >= 18) {
+                console.log("You are eligible to vote.");
+            } else {
+                console.log("You are not eligible to vote.");
+            }
+            Output: You are not eligible to vote.
+    c. else if ladder: The else if ladder allows you to test multiple conditions in sequence.
+        Syntax:
+            if (condition1) {
+                // code to be executed if condition1 is true
+            } else if (condition2) {
+                // code to be executed if condition2 is true
+            } else {
+                // code to be executed if both conditions are false
+            }
+    d. switch statement: The switch statement executes one block of code among many based on the value of an expression.
+        Syntax:
+            switch (expression) {
+                case value1:
+                    // code to be executed if expression equals value1
+                    break;
+                case value2:
+                    // code to be executed if expression equals value2
+                     break;
+                default:
+                    // code to be executed if expression doesn't match any case
+            }
+
+Questions:
+1. write JS code to check whether given year is leap year or not
+2. write a JS code to print day of week based on it s number (monday=1)
+
+3. write a JS code to generate a ramdom number between 1 to 10. user have to input number . if both mathes, user won else it prints whether user value is greater than or less than generated one// // write a JS code to print whether given number is even or odd
+// let num = +prompt("Enter a number")
+// if (num % 2 == 0)
+// {
+//     console.log(`${num} is Even number`)
+// }
+// else
+// {
+//     console.log(`${num} is odd number`)
+// }
+// // write a JS code to print whether given age is eligibile to marry or not. eligibility is 21 years old
+
+
+// // write a JS code to check whether given number is positive or negitive
+// let num2 = +prompt("enter a number")
+// if (num > 0)
+// {
+//     console.log(`${num2} is positive`)
+// }
+// else if (num < 0)
+// {
+//     console.log(`${num2} is negitive`)
+// }
+// else
+// {
+//     console.log(`${num2} is neither positive nor negitive. it is zero`)
+// }
+
+// // Write a JS code to print grade based on given score, score<35 is fail,
+// // score>90 is A, score between 70 to 90 is B and score between 35 to 70 is C
+
+// write a js code to print user details baser on user role using switch
+let role = prompt("enter role");
+let n = prompt("enter name");
+switch (role)
+{
+    case "student": console.log(`welcome ${n}, This is student dashboard`); break;
+    case "mentor": console.log(`welcome ${n}, This is mentor dashboard`); break;
+    case 'admin': console.log(`welcome ${n}, This is Admin dashboard`);
+        break;
+    default: console.log(`Invalid role. please check your role again`)
+}
+
+
+
+
+
+
+
+
+
+
