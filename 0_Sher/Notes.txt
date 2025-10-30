@@ -183,3 +183,54 @@ alert( userName ); // John before the function call
 showMessage();
 
 alert( userName ); // Bob, the value was modified by the function
+
+
+NOTE: - The outer variable is only used if there’s no local one.
+
+#############################     Parameters : -
+----------------------------------------------------------------------------------
+We can pass arbitrary data to functions using parameters.
+
+In the example below, the function has two parameters: from and text.
+
+function showMessage(from, text) { // parameters: from, text
+  alert(from + ': ' + text);
+}
+
+showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
+showMessage('Ann', "What's up?"); // Ann: What's up? (**)
+
+
+
+####################### Default parameters in old JavaScript code
+
+  function showMessage(from, text) {
+    if (text === undefined) {
+      text = 'no text given';
+  }
+    alert( from + ": " + text );
+  }
+
+  
+  // …Or using the || operator:
+  function showMessage(from, text) {
+    // If the value of text is falsy, assign the default value
+    // this assumes that text == "" is the same as no text at all
+    text = text || 'no text given';
+}
+
+
+
+  // Returning a value
+  // A function can return a value back into the calling code as the result.
+  function sum(a, b) {
+    return a + b;
+  }
+
+  let result = sum(1, 2);
+  alert( result ); // 3
+
+
+
+
+  
