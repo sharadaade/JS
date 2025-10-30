@@ -571,6 +571,19 @@ switch (role)
     default: console.log(`Invalid role. please check your role again`)
 }
 
+Loops - 
+Loops are used to iterate certain statement until a specific condition is false;
+It execute the body when condition is true  and keeps on executing until the condition is false.
+One execution is called iteration.
+
+There are two types of loops -
+i. Entry control loops - It checks the condition before executing the body (at entry point)
+    Ex. for, while
+
+ii. Exit control loops - It checks the condition after executing the body (at exit point)
+    Ex. do-while
+
+
 
 
 

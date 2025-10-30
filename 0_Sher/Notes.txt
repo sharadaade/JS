@@ -104,5 +104,82 @@ Use Instead of: || when you don’t want to treat 0, false, or "" as missing
 ------------------------------------------------------------
 
 
+####################################################################################
+###############################    Function   ######################################
+####################################################################################
+
+Function is a block of code which perform specific task or action;
+We can call any number of times and it will perform task.
+
+There is inbuilt methods like -
+alert(message), prompt(message, default ) and confirm(question).But we can create functions of our own as well.
+
+Syntax : -
+        function name(parameter1, parameter2, ...parameterN) {
+          // body
+        }
+
+NOTE - parameters are optional in function
+
+Example of function
+  function showMessage() {
+      alert('Hello everyone!');
+  }
+
+=> function can be called by its name: showMessage().
+
+  function showMessage() {
+    alert( 'Hello everyone!' );
+  }
+
+showMessage();
+showMessage();
+
+-------------------------------------------------------------------------------------
+------------------------------   Local variables    ---------------------------------
+-------------------------------------------------------------------------------------
+A variable declared inside a function is only visible inside that function.
+
+function showMessage() {
+  let message = "Hello, I'm JavaScript!"; // local variable
+  alert( message );
+}
+
+showMessage(); // Hello, I'm JavaScript!
+
+alert( message ); // <-- Error! The variable is local to the function
 
 
+
+-------------------------------------------------------------------------------------
+------------------------------   Outer variables    ---------------------------------
+-------------------------------------------------------------------------------------
+
+A function can access an outer variable as well, for example:
+
+let userName = 'John';
+
+function showMessage() {
+  let message = 'Hello, ' + userName;
+  alert(message);
+}
+
+showMessage(); // Hello, John
+
+IMP -> 
+The function has full access to the outer variable. It can modify it as well.
+
+let userName = 'John';
+
+function showMessage() {
+  userName = "Bob"; // (1) changed the outer variable
+
+  let message = 'Hello, ' + userName;
+  alert(message);
+}
+
+alert( userName ); // John before the function call
+
+showMessage();
+
+alert( userName ); // Bob, the value was modified by the function
