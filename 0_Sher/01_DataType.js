@@ -182,7 +182,14 @@ if(0){
 // -->  !!undefined => false
 
 
+// let age = 20;
+// if(age > '18'){ 
+//     console.log('Vote');
+// }else{
+//     console.log('Not now');
+// }
 
+// Here > operator '18' to number 18 converts automatic
 
 
 

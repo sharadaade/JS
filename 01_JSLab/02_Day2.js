@@ -249,6 +249,21 @@
 // Sample Output : Before Swapping : a = 10 , b = 20
 //                 After Swapping  : a = 20 , b = 10
 
+// let a = 10;
+// let b = 20;
+
+// console.log(`Before swapping`);
+// console.log(`a = ${a} and b = ${b}`);
+
+// let temp = a;
+//     a = b;
+//     b = temp;
+
+
+// console.log(`After swapping`);
+// console.log(`a = ${a} and b = ${b}`);
+
+
 // ========================================================================================================
 
 // Que 8 :  Write a 'JavaScript' program to swap any two integer number without using third variable and print the output on the console.
@@ -259,7 +274,21 @@
 // Sample Output : Before Swapping : a = 10 , b = 20
 //                 After Swapping  : a = 20 , b = 10
 
-// ========================================================================================================
+let a = 10;
+let b = 20;
+
+console.log(`Before swapping`);
+console.log(`a = ${a} and b = ${b}`);
+
+a = a + b; // 10 + 20 = 30
+
+b = a - b; // 30 - 20 = 10
+a = a - b; // 30 - 10 = 20
+
+console.log(`After swapping`);
+console.log(`a = ${a} and b = ${b}`);
+
+// =========================================================================================
 
 // Que 9 :  Write a 'JavaScript' program to find previous multiple of 10 of given 2 digit value only.
 // -------

@@ -34,12 +34,25 @@ function checkMin(a, b){
 // let result = checkMin(5, -2);
 // console.log(result);
 
-function Power(a , b){
-    return Math.pow(a, b);
-}
-let r = Power(2, 4);
+// function Power(a , b){
+//     return Math.pow(a, b);
+// }
+// let r = Power(2, 4);
 // console.log(r);
 
 
+function fun(...numbers){
+    // console.log(typeof numbers);
+    // console.log(numbers);
+    return numbers;
+}
+let x = fun(1, 2, 3, 4);
+console.log(...x);
+
+
+
+// Spread operator
+// let a = [1, 2, 3, 4, 5];
+// console.log(...a);
 
 
