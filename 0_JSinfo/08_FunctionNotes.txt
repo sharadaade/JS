@@ -277,6 +277,31 @@ const sayHi = function() {
   console.log("Hi!");
 };
 
+rest parameters. it uses three dots. it collects all elements as array 
+NOTE - rest parameter always last parameter;
+
+function minNumber(a, b, ...z){
+  console.log(Math.min(2, 3, 7, 0))
+}
+
+Default parameter - 
+function myFun(a, b, c = 22){
+  return a + b + c;
+}
+
+NOTE - c is the default parameter 
+if we don't pass the c parameter then by default c value is 22
+
+
+Spread Operator -
+It also uses three dot
+##################################################################################
+################    Rest parameters vs Spread Operator  ##########################
+##################################################################################
+
+IMP - Rest parameter take input as array whereas Spread Operator split or spread the all array individual elements.
+
+
 Notes:
 ------
 | Type | Hoisted? | Example |

@@ -22,10 +22,32 @@
 // write a JS code to PRINT random number between 7 to 14 on each time
 
 
-let a = + prompt("First value : ");
-let b = + prompt("Second number : ");
+// let a = + prompt("First value : ");
+// let b = + prompt("Second number : ");
 
-console.log(`Sum is ${a+b}`);
+// console.log(`Sum is ${a+b}`);
+
+// Numbers -
+const num = 400;
+// console.log(num);
+
+const balance = new Number(1234);
+// console.log(typeof balance);
+
+const AcBalance = 100000000;
+// console.log(AcBalance.toLocaleString('en-US'));
+// console.log(AcBalance.toLocaleString('en-IN'));
+
+console.log(Math.random() * 10 + 1)
+console.log((Math.random() * 10) + 1)
+
+const min = 10;
+const max = 20;
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+
+
 
 
 

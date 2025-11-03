@@ -183,3 +183,10 @@
 //         console.log("Invalid")
 //         break;
 // }
+
+    
+
+// const person = { name: "Sharad", age: 21 };
+// for (let key in person) {
+//     console.log(key, person[key]);
+// }
