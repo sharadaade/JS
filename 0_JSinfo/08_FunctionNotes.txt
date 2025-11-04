@@ -45,6 +45,10 @@ Notes:
 | Parameter | Placeholder variable in the function | a, b in function add(a, b) |
 | Argument | Actual value passed when calling | 5, 10 in add(5,10) |
 
+Tricks -
+Parameter  => P - Placeholder
+Argument   => A - Actual value
+
 Example:
 ---------
 function add(a, b) {
@@ -301,7 +305,70 @@ It also uses three dot
 
 IMP - Rest parameter take input as array whereas Spread Operator split or spread the all array individual elements.
 
+###############################################################################
+##############################  Type of function     ##########################
+###############################################################################
+1. normal function declaration
+  function myFun(){
+    return a + b;
+  }
 
+2. Function expression
+  let num = function(a, b){
+    return a + b;
+  }
+
+3. arrow function (ES6 feature)
+  let sum = (a, b) =>{
+    return a * b;
+  }
+
+## One line arrow function
+let gg = () => "Hey" // Hey is return : in one line don't required return keyword
+
+###################################################################################
+################################  Callback function  ##############################
+###################################################################################
+
+IT is an function that is passed to another function as a parameter. The function that receives another function is called Higher Order Function (HOF)
+
+Callback can be used for async operation(any operation that does does't executes immediately)
+
+
+eg:
+function mad{
+  console.log("It is mad);
+}
+
+function Simple(a){
+  console.log("It is simple);
+  a();
+}
+
+Simple(mad) // first call Simple and mad function is passed as parameter
+
+
+###################################################################################
+#################################       Closure      ##############################
+###################################################################################
+
+Closure:- if one function nested in another function, the inner function remembers, the outer function value after outer function execution ended is call Closure
+
+function Outer(){
+  let x = 5;
+  function Inner(){
+    x++;
+    console.log(x);
+  }
+  return Inner;
+}
+
+let z = Outer();
+z() // 6
+z() // 7
+
+
+###############################################################################
 Notes:
 ------
 | Type | Hoisted? | Example |

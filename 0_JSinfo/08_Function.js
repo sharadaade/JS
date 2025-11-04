@@ -88,16 +88,118 @@ b = [3, 4]
 c = [a, b]
 d = [...a, ...b]
 
-console.log(d);
+// console.log(d);
 
 let [e, ...f] = [5, 6, 7, 8, 9]
 //               e  ____ f ____
-console.log([e, ...f]);
-console.log([...f]);
+// console.log([e, ...f]);
+// console.log([...f]);
+
+
+// Print function
+function OKK() {
+    return "NOOOO";
+}
+// console.log(OKK); // NOT calling
+// It prints the whole function
 
 
 // 1. Write a function that checks whether given number is +ve or -ve and print
+
+function check_Num(num) {
+    if (num > 0) {
+        return "+ve";
+    } else if (num < 0) {
+        return "-ve";
+    } else {
+        return "Zero";
+    }
+}
+let numResult = check_Num(22);
+// console.log(numResult);
+
 // 2. Write a function that create short code for everyone for eg. short_code("Durga Prasad") Output - "DP"
+
+function ShortForm(fullName) {
+    let ar = fullName.split(" ");
+    let F = [...ar[0]]
+    let L = [...ar[1]]
+    // console.log(ar);
+    console.log(F[0] + L[0]);
+}
+// ShortForm("Sharad Aade");
+
 // 3. WAF that accept any number of number of parameters and print the product
+function productOfNum(a, b) {
+    return a * b;
+}
+let r = productOfNum(2, 90);
+// console.log(r);
+
+
 // 4. Write a function too find factorial of given number 
 //    eg. fact(5), output: 120
+let fact = 1;
+function Factorial(num) {
+    for (let i = 1; i <= num; i++) {
+        fact = fact * i;
+    }
+    return fact;
+}
+let ft = Factorial(5);
+console.log(ft);
+
+// Convert function to func expression and arrow
+/*
+    1. 
+    function mul(a, b){
+        return a * b;
+    }
+
+    func expression
+    let r = (a, b){
+        return a * b;
+    }
+    
+    arrow function
+    let r = (a, b) => {
+        return a * b;
+    }
+
+    2. 
+    function area(r){
+        return pi * r * r;
+    }
+    
+    let area = function(r){
+        return pi * r * r;
+    }
+
+    let area = (r) => {
+        return pi * r * r;    
+    }
+
+    function add(a){
+        function add2(b){
+            return a + b;
+        }
+    }
+    
+    let add = function(a){
+        let add2 = function(b){
+            return a * b;
+        }
+        return add2;
+    }
+        OR
+    let add = function(a){
+        return function(b){
+            return a * b;
+        }
+        return add2;
+    }
+    
+    let add3 = (a) => (b) => a * b;
+*/
+
+
