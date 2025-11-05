@@ -68,5 +68,40 @@ arr.splice();
 */
 
 
+// NOTE: - string are immutable (not changeable original value)
+//         but array are mutable 
+// Extra 
+let myArr = ["Sharad", true, { name: "AutumnHQ", founding: 2025 }, function () { console.log("NO"); }]
+// console.log(myArr);
+// myArr.splice(1,0,"Aade");
+myArr.splice(arr.length - 1, 0, "Beed", "Nothing", "Oh No!!")
+// console.log(myArr);
 
+// Splice = > It start from specific index and deletes based on count (or all if it is not present). also adds element at specific index.
+// It takes three argument
+// arr.splice(indexNum, deleteCount, insertingElement)
+
+// Task;
+let fr = ["s", "r", "ra", "p", "c", "penny"];
+// remove penny and add monica
+fr.pop("penny")
+fr.push("monica")
+// fr.splice()
+// console.log(fr);
+
+// IMP 
+// ##################################################################################
+// • Loop through arrays (for, forEach, for...of)
+// • Array methods: map(), filter(), reduce(), includes(), slice(), splice()
+
+// forEach
+let f = ["s", "r", "ra", "p", "c", "penny"];
+let aar = [5, 6, 7, 8]
+
+aar.forEach(function(e){
+    console.log(e);
+})
+f.forEach(function(e){
+    console.log("Mr. " + e);
+})
 

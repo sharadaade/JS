@@ -1,0 +1,7 @@
+let var const
+rest & spread
+forEach(), map(), filter()
+
+forEach() => return not work
+map() => it return all element true as well as false
+filter() => it return only true condition element
