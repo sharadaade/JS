@@ -71,8 +71,3 @@ for(let i = 1; i <= 50; i++){
 }
 let percentage = (count * 100) / numberOfTrials;
 console.log(percentage + "%");
-
-
-
-
-

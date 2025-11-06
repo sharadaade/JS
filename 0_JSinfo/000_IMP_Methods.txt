@@ -1,0 +1,57 @@
+
+Math Methods:
+---------------------------------------------------------------------------------
+    Math.round(): Rounds a number to the nearest integer.
+    Math.floor(): Rounds a number down to the nearest integer.
+    Math.ceil(): Rounds a number up to the nearest integer.
+    Math.random(): Returns a pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive).
+    Math.abs(): Returns the absolute value of a number.
+    Math.max(): Returns the largest of zero or more numbers.
+    Math.min(): Returns the smallest of zero or more numbers.
+    Math.pow(base, exponent): Returns the base to the exponent power.
+    Math.sqrt(): Returns the square root of a number. 
+
+String Methods:
+-----------------------------------------------------------------------------
+    length (property): Returns the length of a string.
+    trim(): Removes whitespace from both ends of a string.
+    toLowerCase(): Converts a string to lowercase.
+    toUpperCase(): Converts a string to uppercase.
+    slice(start, end): Extracts a part of a string and returns a new string.
+    split(separator): Splits a string into an array of substrings.
+    includes(substring): Checks if a string contains a specified substring.
+    startsWith(prefix): Checks if a string starts with a specified prefix.
+    endsWith(suffix): Checks if a string ends with a specified suffix.
+    replace(searchValue, replaceValue): Replaces occurrences of a substring.
+    replaceAll(searchValue, replaceValue): Replaces all occurrences of a substring.
+    concat(string2, ...): Joins two or more strings. 
+
+Array Methods:
+------------------------------------------------------------------------------------
+    push(element1, ...): Adds one or more elements to the end of an array.
+    pop(): Removes the last element from an array.
+    shift(): Removes the first element from an array.
+    unshift(element1, ...): Adds one or more elements to the beginning of an array.
+    map(callbackFunction): Creates a new array with the results of calling a provided function on every element. 
+
+    filter(callbackFunction): Creates a new array with all elements that pass the test implemented by the provided function.
+    reduce(callbackFunction, initialValue): Executes a reducer function on each element of the array, resulting in a single output value.
+    forEach(callbackFunction): Executes a provided function once for each array element.
+    find(callbackFunction): Returns the value of the first element in the array that satisfies the provided testing function. 
+    findIndex(callbackFunction): Returns the index of the first element in the array that satisfies the provided testing function. 
+
+    includes(value): Checks if an array includes a certain value.
+    concat(array2, ...): Joins two or more arrays.
+    splice(start, deleteCount, item1, ...): Changes the contents of an array by removing or replacing existing elements and/or adding new elements.
+    slice(start, end): Returns a shallow copy of a portion of an array into a new array. 
+
+Object Methods:
+-----------------------------------------------------------------------------------
+    Object.keys(obj): Returns an array of a given object's own enumerable property names.
+    Object.values(obj): Returns an array of a given object's own enumerable property values.
+    Object.entries(obj): Returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
+    Object.assign(target, ...sources): Copies all enumerable own properties from one or more source objects to a target object.
+    Object.freeze(obj): Freezes an object, preventing new properties from being added to it, existing properties from being removed, and existing properties from being changed.
+    Object.hasOwnProperty(prop): Returns a boolean indicating whether the object has the specified property as its own property (not inherited).
+
+    

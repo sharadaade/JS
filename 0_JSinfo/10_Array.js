@@ -105,3 +105,10 @@ f.forEach(function(e){
     console.log("Mr. " + e);
 })
 
+
+const a = [5, 4, 8, 7, 9, 2, 3]
+// 1. Print all the elements which are greater than 7 in given array
+// 2. Return and print only the elements which are odd in given array
+// 3. Write different ways to multiply all elements of array using forEach, map, reduce
+// 4. For given product prices array, give 20% discount to all product and return their new prices
+// prices = [500, 200, 250, 110, 196]
