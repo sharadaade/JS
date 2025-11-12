@@ -76,3 +76,20 @@
 // print(obj);
 
 
+
+// let filterAbove50 = (ar) => {
+//     let newAr = [];
+//     for(let i = 0; i < ar.length; i++){
+//         if(ar[i]>50){
+//             newAr.push(ar[i])
+//         }
+//     }
+//     return newAr;
+// }
+
+// let num = [10, 50, 67, 88, 90, 67]
+
+// let r = filterAbove50(num)
+// console.log(r)
+
+
